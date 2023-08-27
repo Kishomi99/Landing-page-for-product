@@ -23,7 +23,7 @@
         <div class="content">
             <div class="textbox">
                 <h2>It's not just coffee
-                    <br>It's <span>Starbucks</span></h2>
+                    <br>It's <span class="clr">Starbucks</span></h2>
                     <p>Starbucks is a global coffeehouse chain renowned for its premium coffee, beverages, and inviting café ambiance. 
                         Founded in 1971 in Seattle, USA, Starbucks has grown into one of the world's most recognizable and beloved brands. 
                         With thousands of locations worldwide, Starbucks is celebrated for its wide range of coffee selections,
@@ -31,7 +31,7 @@
                         The brand's commitment to quality, sustainability, 
                         and community engagement has made it a favorite destination for coffee enthusiasts and those seeking a comfortable space to relax and connect.
                     </p>
-                    <a href="#">Learn More</a>
+                    <a href="#" class="btn">Learn More</a>
             </div>
             <div class="imgbox">
                 <img src="images/green.png" class="starbucks">
@@ -39,9 +39,9 @@
             </div>
         </div>
         <ul class="cup">
-            <li><img src="images/thumb1.png" ></li>
-            <li><img src="images/thumb2.png" ></li>
-            <li><img src="images/thumb3.png" ></li>
+            <li><img src="images/thumb1.png" onclick="imgSlider('images/green.png');changeColor('#017143');btnchangeColor('#017143');textchangeColor('#017143')"></li>
+            <li><img src="images/thumb2.png" onclick="imgSlider('images/pink.png');changeColor('#eb7495');btnchangeColor('#eb7495');textchangeColor('#eb7495')"></li>
+            <li><img src="images/thumb3.png" onclick="imgSlider('images/pic.png');changeColor('#d752b1');btnchangeColor('#d752b1');textchangeColor('#d752b1')"></li>
         </ul>
         <ul class="sci">
             <li><a href="#"><img src="images/facebook.png" ></a></li>
@@ -51,6 +51,26 @@
         </ul>
     </div>
     </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src=anything;
+        }
+        function changeColor(color){
+            const circle=document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    function btnchangeColor(color){
+        const btn =document.querySelector('.btn');
+        btn.style.background= color;
+
+    }  
+    function textchangeColor(color){
+        const span =document.querySelector('span');
+        span.style.color= color;
+
+    }   
+        
+    </script>
 
     
 </body>

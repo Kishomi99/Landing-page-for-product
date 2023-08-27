@@ -39,9 +39,21 @@
             </div>
         </div>
         <ul class="cup">
-            <li><img src="images/thumb1.png" onclick="imgSlider('images/green.png');changeColor('#017143');btnchangeColor('#017143');textchangeColor('#017143')"></li>
-            <li><img src="images/thumb2.png" onclick="imgSlider('images/pink.png');changeColor('#eb7495');btnchangeColor('#eb7495');textchangeColor('#eb7495')"></li>
-            <li><img src="images/thumb3.png" onclick="imgSlider('images/pic.png');changeColor('#d752b1');btnchangeColor('#d752b1');textchangeColor('#d752b1')"></li>
+            <li><img src="images/thumb1.png" onclick="imgSlider('images/green.png');
+            changeColor('#017143');
+            btnchangeColor('#017143');
+            textchangeColor('#017143');
+            headerchangeColor('#017143')"></li>
+            <li><img src="images/thumb2.png" onclick="imgSlider('images/pink.png');
+            changeColor('#eb7495');
+            btnchangeColor('#eb7495');
+            textchangeColor('#eb7495');
+            headerchangeColor('#eb7495')"></li>
+            <li><img src="images/thumb3.png" onclick="imgSlider('images/pic.png');
+            changeColor('#d752b1');
+            btnchangeColor('#d752b1');
+            textchangeColor('#d752b1');
+            headerchangeColor('#d752b1')"></li>
         </ul>
         <ul class="sci">
             <li><a href="#"><img src="images/facebook.png" ></a></li>
@@ -69,6 +81,11 @@
         span.style.color= color;
 
     }   
+    function headerchangeColor(color){
+        const header =document.querySelector('header');
+        header.style.background= color;
+
+    } 
         
     </script>
 
